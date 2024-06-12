@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #back {
+            height: 700px;
+            width: 100%;
+            color: white;
+        }
+
+        input {
+            background: transparent;
+            color: white;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div id=back>
+        <h1>멤버 등록</h1>
+        <form action="#" name="frm">
+            <table border="1">
+                <tr>
+                    <td>아이디:</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>닉네임:</td>
+                    <td><input type="text" name="nick"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="btn" value="등록" name="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr>
+    <div id="back2">
+        <h1>멤버 조회</h1>
+        <input type="text" id="userInput">
+        <button id="readBtn">조회</button>
+        <div id="result"></div>
+    </div>
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script>
+        VANTA.CLOUDS({
+            el: "#back",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        });
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color1: 0xffffff
+        })
+    </script> -->
+
+    <script src="./firebase.js"></script>
+</body>
+
+</html>
